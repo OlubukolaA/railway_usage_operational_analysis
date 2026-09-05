@@ -23,7 +23,7 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 ## Dataset Summary
 - **Rows:** 31,653 distinct transactions IDS
 - **Source:** Synthetic UK rail ticketing & operational dataset
-- **Structure:** - Singe denormalised fact table
+- **Structure:** - Single denormalised fact table
 
 
 ## Business Questions Answered
