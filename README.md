@@ -8,9 +8,14 @@ An interactive Power BI dashboard analysing UK rail passenger usage, sales perfo
 
 ## Overview
 
-This project explores rail ticketing and operational data to answer practical business questions a transport operator's commercial and operations teams would ask: Where is revenue concentrated? Which routes underperform? What's driving delays and cancellations? When do passengers actually travel?
+This project explores rail ticketing and operational data to answer practical business questions a transport operator's commercial and operations teams would ask: 
+## Where is revenue concentrated? Which routes underperform? What's driving delays and cancellations? When do passengers actually travel?
 
-The dashboard is built as three linked report pages - Passenger Usage, Sales Performance, and Services Performance — each targeting a distinct stakeholder view (commercial, finance, and operations respectively).
+The dashboard is built as three linked report pages:
+- ## Passenger Usage - *customer behaviour, travel patterns, railcard usage*
+- ## Sales Performance
+- ## Services Performance
+Each targeting a distinct stakeholder view (commercial, finance, and operations respectively).
 
 ---
 
@@ -40,19 +45,25 @@ Services Performance
 
 ## Key Insights
 
-- Revenue is heavily concentrated: London Kings Cross to York alone generated £87K, more than the next three top routes combined — while the bottom five routes each earned under £700.
-- Standard class drives the bulk of revenue (£170K, 79%) vs First Class (£44K, 21%), but Advance tickets (£94K) outperform Anytime (£42K) and Off-Peak combined — suggesting price-sensitive booking behaviour dominates.
+- Revenue is heavily concentrated: London Kings Cross to York alone generated £87K, more than the next three top routes combined, while the bottom five routes each earned under £700.
+- Standard class drives the bulk of revenue (£170K, 79%) vs First Class (£44K, 21%), but Advance tickets (£94K) outperform Anytime (£42K) and Off-Peak combined, suggesting price-sensitive booking behaviour dominates.
 - Peak travel is bimodal, concentrated in the 06:00–08:00 morning window (8,086 tickets) and 16:00–18:00 evening window (8,302 tickets), consistent with commuter travel patterns.
 - Technical issues are the leading cause of service disruption (316 incidents), more than double the next closest cause (Signal Failure, 155), and a clear target for operational investment.
-- Cancellations carry a disproportionate refund cost: cancelled journeys accounted for £4.2K in refunds vs. £0.8K for delays, despite delays being more frequent month to month — indicating refund policy or customer behaviour treats cancellations more severely.
-- London dominates route volume and revenue (£166K net revenue, 5,726 trips) but also carries the highest refund amount (£4,165) — worth investigating whether this is proportional to volume or a service quality signal.
+- Cancellations carry a disproportionate refund cost: cancelled journeys accounted for £4.2K in refunds vs. £0.8K for delays, despite delays being more frequent month to month indicating refund policy or customer behaviour treats cancellations more severely.
+- London dominates route volume and revenue (£166K net revenue, 5,726 trips) but also carries the highest refund amount (£4,165). This is worth investigating whether this is proportional to volume or a service quality signal.
 
 ---
 
 ## Data Model
 
-This is a single flat table model (not a star schema) — a deliberate scope decision for this project, covering ticket orders, journey details, revenue, refunds, and service status in one denormalised source. All KPIs and breakdowns are built as DAX measures over this table.
+This project uses a single flat table model (not a star schema) a deliberate scope decision for this project, covering ticket orders, journey details, revenue, refunds, and service status in one denormalised source. All KPIs and breakdowns are built as DAX measures over this table.
 
+This simplified the model and allowed me to focus on:
+- Time based analysis
+- Passenger segmentation
+- Revenue and refund metrics
+- Station level insights
+- Ticket type and railcard behaviour
 
 ## DAX Measures (Highlights)
 
