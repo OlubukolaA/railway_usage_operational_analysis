@@ -8,8 +8,7 @@ An interactive Power BI dashboard analysing UK rail passenger usage, sales perfo
 
 ## Overview
 
-This project explores rail ticketing and operational data to answer practical business questions a transport operator's commercial and operations teams would ask: 
-
+This project explores rail ticketing and operational data to answer practical business questions a transport operator's commercial and operations teams would ask:  
 **Where is revenue concentrated? Which routes underperform? What's driving delays and cancellations? When do passengers actually travel?**
 
 The dashboard is built as three linked report pages:
