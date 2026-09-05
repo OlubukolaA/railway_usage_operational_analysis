@@ -1,10 +1,8 @@
 # UK Train Passenger & Sales Performance Dashboard
 
 An interactive Power BI dashboard analysing UK rail passenger usage, sales performance, and service reliability across major routes and stations. Built as a single-table model with DAX-driven KPIs, drill-down route tables, and trend analysis across three report pages.
+
 ![Report Overview Tabs](images/overview_tabs.png)
-
-
-🔗 Live report: [Power BI Service link]
 
 ---
 
@@ -14,7 +12,7 @@ This project explores rail ticketing and operational data to answer practical bu
 **Where is revenue concentrated? Which routes underperform? What's driving delays and cancellations? When do passengers actually travel?**
 
 The dashboard is built as three linked report pages:
-- **Passenger Usage** - customer behaviour, travel patterns, railcard usage
+- **Passenger Usage** - travel patterns, railcard usage
 - **Sales Performance** - revenue, refunds, ticket types, payment methods
 - **Services Performance** - delays, cancellations, route reliablity
   
@@ -23,7 +21,7 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 ---
 
 ## Dataset Summary
-- **Rows:** 31,653 distinct transactions IDS
+- **Rows:** 31,653 ticket transactions
 - **Source:** Synthetic UK rail ticketing & operational dataset
 - **Structure:** - Single denormalised fact table
 
@@ -76,9 +74,7 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 
 ## Data Model
 
-This project uses a **single flat table model** (not a star schema) a deliberate scope decision for this project, covering ticket orders, journey details, revenue, refunds, and service status in one denormalised source. All KPIs and breakdowns are built as DAX measures over this table.
-
-This simplified the model and allowed me to focus on:
+This project uses a **single flat-table model** rather than a star schema. This simplified the model and allowed me to focus on:
 - Time based analysis
 - Passenger segmentation
 - Revenue and refund metrics
@@ -91,16 +87,16 @@ This simplified the model and allowed me to focus on:
 
 ## DAX Measures (Highlights)
 
+```
 Refund % = 
 DIVIDE([Refund Total Amount], [Total Revenue])
 ```
-dax
+```dax
 On time % = 
 DIVIDE([Ontime Services], [Services])
 ```
 
-```
-dax
+```dax
 Cancelled % = 
 DIVIDE([Cancelled Services], [Services])
 ```
