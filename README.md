@@ -1,6 +1,8 @@
 # UK Train Passenger & Sales Performance Dashboard
 
 An interactive Power BI dashboard analysing UK rail passenger usage, sales performance, and service reliability across major routes and stations. Built as a single-table model with DAX-driven KPIs, drill-down route tables, and trend analysis across three report pages.
+![Report Overview Tabs](images/overview_tabs.png)
+
 
 🔗 Live report: [Power BI Service link]
 
