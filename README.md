@@ -76,12 +76,14 @@ This simplified the model and allowed me to focus on:
 
 Refund % = 
 DIVIDE([Refund Total Amount], [Total Revenue])
-```dax
+```
+dax
 On time % = 
 DIVIDE([Ontime Services], [Services])
 ```
 
-```dax
+```
+dax
 Cancelled % = 
 DIVIDE([Cancelled Services], [Services])
 ```
