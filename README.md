@@ -12,9 +12,9 @@ This project explores rail ticketing and operational data to answer practical bu
 #### Where is revenue concentrated? Which routes underperform? What's driving delays and cancellations? When do passengers actually travel?
 
 The dashboard is built as three linked report pages:
-- ## Passenger Usage - *customer behaviour, travel patterns, railcard usage*
-- ## Sales Performance
-- ## Services Performance
+- ##### Passenger Usage - *customer behaviour, travel patterns, railcard usage*
+- ##### Sales Performance
+- ##### Services Performance
 Each targeting a distinct stakeholder view (commercial, finance, and operations respectively).
 
 ---
