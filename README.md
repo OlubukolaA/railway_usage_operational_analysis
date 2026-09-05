@@ -59,7 +59,7 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 ![Sales Performance Dashboard](images/sales_performance.png)
 
 ### **Services Performance**
-![Services Performance Dashboard](images/services_performance_page.png)
+![Services Performance Dashboard](images/services_performance.png)
 
 ---
 
