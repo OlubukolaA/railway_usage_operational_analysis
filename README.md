@@ -20,23 +20,29 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 
 ---
 
+## Dataset Summary
+- **Rows:** 31,653 distinct transactions IDS
+- **Source:** Synthetic UK rail ticketing & operational dataset
+- **Structure:** - Singe denormalised fact table
+
+
 ## Business Questions Answered
 
-Passenger Usage
+**Passenger Usage**
 - What is the trend of passenger journeys over time?
 - What proportion of passengers are Railcard users vs non-users?
 - How do ticket types and travel classes compare?
 - What are the peak hours of travel across the week?
 - Which stations are most popular for departure and arrival?
 
-Sales Performance
+**Sales Performance**
 - How does net revenue trend month on month?
 - How does journey status (on-time, delayed, cancelled) impact revenue and refunds?
 - Which ticket types and travel classes generate the most revenue?
 - What are the top and bottom performing routes by revenue?
 - Which payment method is most used?
 
-Services Performance
+**Services Performance**
 - Which routes have the highest ticket volumes, cancellations, and refunds?
 - What are the primary causes of delays and cancellations, and how do they compare on refund impact?
 - How do on-time performance, delays, and cancellations trend monthly?
@@ -57,7 +63,7 @@ Services Performance
 
 ## Data Model
 
-This project uses a single flat table model (not a star schema) a deliberate scope decision for this project, covering ticket orders, journey details, revenue, refunds, and service status in one denormalised source. All KPIs and breakdowns are built as DAX measures over this table.
+This project uses a **single flat table model** (not a star schema) a deliberate scope decision for this project, covering ticket orders, journey details, revenue, refunds, and service status in one denormalised source. All KPIs and breakdowns are built as DAX measures over this table.
 
 This simplified the model and allowed me to focus on:
 - Time based analysis
@@ -73,17 +79,19 @@ DIVIDE([Refund Total Amount], [Total Revenue])
 ```dax
 On time % = 
 DIVIDE([Ontime Services], [Services])
+```
 
-
-dax
+```dax
 Cancelled % = 
 DIVIDE([Cancelled Services], [Services])
-`
-Weather % = 
+```
+
+```Weather % = 
 CALCULATE(
     [Delayed %],
     'Railway'[Delay Reasons] = "Weather"
 )
+```
 Additional measures built into the model include Net Revenue, Total Refund, Total Ticket Orders, Revenue Per Customer, and Month-on-Month percentage change calculations for cancellations and revenue trends.
 
 ---
