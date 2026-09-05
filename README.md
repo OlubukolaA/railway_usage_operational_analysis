@@ -126,7 +126,7 @@ Raw transaction-level data (Transaction ID, Date/Time of Purchase, Purchase Type
 - Date/time extraction: Year, Month, Month Name, Day Name, Start of Hour
 - Row filtering to remove incomplete or invalid records
 
-![Power Query Applied Steps](images/power_query_steps.png)
+![Power Query Applied Steps](images/powerquery.png)
 
 ---
 
