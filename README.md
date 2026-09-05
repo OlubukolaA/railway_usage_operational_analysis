@@ -87,6 +87,14 @@ This simplified the model and allowed me to focus on:
 - Station level insights
 - Ticket type and railcard behaviour
 
+## 🧾 Data Model
+![Data Model](images/powerquery.png)
+
+---
+
+## 🔧 Data Transformation (Power Query)
+![Power Query Applied Steps](images/power_query_steps.png)
+
 ## DAX Measures (Highlights)
 
 Refund % = 
