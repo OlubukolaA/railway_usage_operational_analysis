@@ -53,7 +53,7 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 ---
 
 ### **Passenger Usage**
-![Passenger Usage Dashboard](railway_overview.png)
+![Passenger Usage Dashboard](images/railway_overview.png)
 
 ### **Sales Performance**
 ![Sales Performance Dashboard](images/sales_performance.png)
