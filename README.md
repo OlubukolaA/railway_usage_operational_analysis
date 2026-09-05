@@ -52,6 +52,19 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 
 ---
 
+### **Passenger Usage**
+![Passenger Usage Dashboard](railway_overview.png)
+
+### **Sales Performance**
+![Sales Performance Dashboard](images/sales_performance.png)
+
+### **Services Performance**
+![Services Performance Dashboard](images/services_performance_page.png)
+
+---
+
+---
+
 ## Key Insights
 
 - Revenue is heavily concentrated: London Kings Cross to York alone generated £87K, more than the next three top routes combined, while the bottom five routes each earned under £700.
