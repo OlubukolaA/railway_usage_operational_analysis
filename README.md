@@ -50,8 +50,6 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 - How do on-time performance, delays, and cancellations trend monthly?
 - Which routes are most/least popular, and most delayed/cancelled?
 
----
-
 ### **Passenger Usage**
 ![Passenger Usage Dashboard](images/railway_overview.png)
 
@@ -60,8 +58,6 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 
 ### **Services Performance**
 ![Services Performance Dashboard](images/service_performance.png)
-
----
 
 ---
 
@@ -87,13 +83,7 @@ This simplified the model and allowed me to focus on:
 - Station level insights
 - Ticket type and railcard behaviour
 
-## 🧾 Data Model
-![Data Model](images/powerquery.png)
-
 ---
-
-## 🔧 Data Transformation (Power Query)
-![Power Query Applied Steps](images/power_query_steps.png)
 
 ## DAX Measures (Highlights)
 
@@ -136,7 +126,7 @@ Raw transaction-level data (Transaction ID, Date/Time of Purchase, Purchase Type
 - Date/time extraction: Year, Month, Month Name, Day Name, Start of Hour
 - Row filtering to remove incomplete or invalid records
 
-![Power Query Applied Steps](images/power-query-steps.png)
+![Power Query Applied Steps](images/power_query_steps.png)
 
 ---
 
