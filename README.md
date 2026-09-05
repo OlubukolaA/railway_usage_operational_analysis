@@ -14,9 +14,9 @@ This project explores rail ticketing and operational data to answer practical bu
 The dashboard is built as three linked report pages:
 - **Passenger Usage** - travel patterns, railcard usage
 - **Sales Performance** - revenue, refunds, ticket types, payment methods
-- **Services Performance** - delays, cancellations, route reliablity
+- **Services Performance** - delays, cancellations, route reliability
   
-Each targeting a distinct stakeholder view (commercial, finance, and operations respectively).
+Each targets a distinct stakeholder view (commercial, finance, and operations respectively).
 
 ---
 
@@ -66,8 +66,8 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 - Revenue is heavily concentrated: London Kings Cross to York alone generated £87K, more than the next three top routes combined, while the bottom five routes each earned under £700.
 - Standard class drives the bulk of revenue (£170K, 79%) vs First Class (£44K, 21%), but Advance tickets (£94K) outperform Anytime (£42K) and Off-Peak combined, suggesting price-sensitive booking behaviour dominates.
 - Peak travel is bimodal, concentrated in the 06:00–08:00 morning window (8,086 tickets) and 16:00–18:00 evening window (8,302 tickets), consistent with commuter travel patterns.
-- Technical issues are the leading cause of service disruption (316 incidents), more than double the next closest cause (Signal Failure, 155), and a clear target for operational investment.
-- Cancellations carry a disproportionate refund cost: cancelled journeys accounted for £4.2K in refunds vs. £0.8K for delays, despite delays being more frequent month to month indicating refund policy or customer behaviour treats cancellations more severely.
+- Technical issues are the leading cause of service disruption (316 incidents), more than double the next closest cause (Signal Failure, 155), highlighting an area for further operational investigation.
+- Cancellations carry a disproportionate refund cost: cancelled journeys accounted for £4.2K in refunds vs. £0.8K for delays, despite delays being more frequent month to month. This highlights the need to investigate the drivers and financial impact of cancellations.
 - London dominates route volume and revenue (£166K net revenue, 5,726 trips) but also carries the highest refund amount (£4,165). This is worth investigating whether this is proportional to volume or a service quality signal.
 
 ## Business Recommendations
