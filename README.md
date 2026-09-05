@@ -82,6 +82,7 @@ This simplified the model and allowed me to focus on:
 - Revenue and refund metrics
 - Station level insights
 - Ticket type and railcard behaviour
+![Data Model](images/datamodel.png)
 
 ---
 
