@@ -70,6 +70,13 @@ Each targeting a distinct stakeholder view (commercial, finance, and operations 
 - Cancellations carry a disproportionate refund cost: cancelled journeys accounted for £4.2K in refunds vs. £0.8K for delays, despite delays being more frequent month to month indicating refund policy or customer behaviour treats cancellations more severely.
 - London dominates route volume and revenue (£166K net revenue, 5,726 trips) but also carries the highest refund amount (£4,165). This is worth investigating whether this is proportional to volume or a service quality signal.
 
+## Business Recommendations
+- **Review high- and low-performing routes:** Investigate what drives the significant revenue differences between routes and assess whether pricing, demand or service frequency explains the variation.
+- **Optimise peak-period capacity:** Review capacity and service frequency around the morning and evening peaks to ensure resources align with passenger demand.
+- **Investigate technical disruptions:** Analyse recurring technical issues and assess whether preventative maintenance could reduce service disruption.
+- **Reduce cancellation-related costs:** Investigate the main causes of cancellations and identify opportunities to reduce cancellations and associated refunds.
+- **Monitor London performance:** Assess whether London's higher refund levels are proportional to its substantially higher passenger volume or indicate a service-quality issue.
+
 ---
 
 ## Data Model
