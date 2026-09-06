@@ -108,10 +108,9 @@ Cancelled % =
 DIVIDE([Cancelled Services], [Services])
 ```
 
-```Weather % = 
-CALCULATE(
-    [Delayed %],
-    'Railway'[Delay Reasons] = "Weather"
+```Total Refund = 
+CALCULATE([Total Ticket Orders],
+'Railway'[Refund Request] = "Yes"
 )
 ```
 Additional measures built into the model include Net Revenue, Total Refund, Total Ticket Orders, Revenue Per Customer, and Month-on-Month percentage change calculations for cancellations and revenue trends.
