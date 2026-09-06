@@ -96,20 +96,30 @@ This project uses a **single flat-table model** rather than a star schema. This 
 
 ```
 Refund % = 
-DIVIDE([Refund Total Amount], [Total Revenue])
+DIVIDE(
+       [Refund Total Amount],
+       [Total Revenue]
+ )
 ```
 ```dax
 On time % = 
-DIVIDE([Ontime Services], [Services])
+DIVIDE(
+      [Ontime Services],
+      [Services]
+ )
 ```
 
 ```dax
 Cancelled % = 
-DIVIDE([Cancelled Services], [Services])
+DIVIDE(
+       [Cancelled Services],
+       [Services]
+)
 ```
 
 ```Total Refund = 
-CALCULATE([Total Ticket Orders],
+CALCULATE(
+[Total Ticket Orders],
 'Railway'[Refund Request] = "Yes"
 )
 ```
